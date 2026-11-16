@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Başlıklar) & Plus Jakarta Sans (Gövde) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome İkon Seti -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        anadolu: {
+                            cream: '#FDFBF7',
+                            sand: '#F5EFE6',
+                            warm: '#EAE0D2',
+                            forest: '#2C4A3E',
+                            forestDark: '#1E352C',
+                            terracotta: '#B84A39',
+                            terracottaDark: '#963829',
+                            wheat: '#D4A359',
+                            wheatLight: '#E8C589',
+                            charcoal: '#262320',
+                            muted: '#5E5852'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Yöresel Anadolu Kilim Bordürü Deseni (CSS/SVG) */
+        .kilim-border {
+            height: 12px;
+            width: 100%;
+            background-color: #2C4A3E;
+            background-image: url("data:image/svg+xml,%3Csvg width='48' height='12' viewBox='0 0 48 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6 L6 0 L12 6 L6 12 Z' fill='%23D4A359'/%3E%3Cpath d='M12 6 L18 0 L24 6 L18 12 Z' fill='%23B84A39'/%3E%3Cpath d='M24 6 L30 0 L36 6 L30 12 Z' fill='%23D4A359'/%3E%3Cpath d='M36 6 L42 0 L48 6 L42 12 Z' fill='%23F5EFE6'/%3E%3Ccircle cx='6' cy='6' r='1.5' fill='%232C4A3E'/%3E%3Ccircle cx='18' cy='6' r='1.5' fill='%23FDFBF7'/%3E%3Ccircle cx='30' cy='6' r='1.5' fill='%232C4A3E'/%3E%3Ccircle cx='42' cy='6' r='1.5' fill='%23B84A39'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+        }
+
+        .kilim-divider {
+            height: 16px;
+            width: 180px;
+            margin: 0 auto;
+            background-image: url("data:image/svg+xml,%3Csvg width='36' height='16' viewBox='0 0 36 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 1 L25 8 L18 15 L11 8 Z' fill='none' stroke='%23B84A39' stroke-width='2'/%3E%3Ccircle cx='18' cy='8' r='2.5' fill='%23D4A359'/%3E%3Cpath d='M0 8 L8 8 M28 8 L36 8' stroke='%232C4A3E' stroke-width='1.5'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+        }
+
+        /* Özel Kaydırma Çubuğu */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5EFE6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2C4A3E;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B84A39;
+        }
+    </style>
+</head>
+<body class="bg-anadolu-cream text-anadolu-charcoal font-sans antialiased selection:bg-anadolu-terracotta selection:text-white">
+
+    <!-- Üst Yöresel Kilim Şeridi -->
+    <div class="kilim-border"></div>
+
+    <!-- Üst Bilgi Barı (Hızlı İletişim & Sosyal Medya) -->
+    <div class="bg-anadolu-forestDark text-anadolu-sand text-xs py-2 px-4 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-anadolu-wheat"></i>
+                    Sultaniye Mah. Aziz Nesin Cad. No: 28, Esenyurt / İstanbul
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-anadolu-wheatLight font-medium">Bizi Takip Edin:</span>
+                <a href="https://www.instagram.com/sivassarkoy58?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-anadolu-wheat transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                    <span>@sivassarkoy58</span>
+                </a>
+                <a href="https://wa.me/905320000058" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-anadolu-wheat transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana Navigasyon (Header) -->
+    <header class="sticky top-0 z-40 bg-anadolu-cream/95 backdrop-blur-md border-b border-anadolu-warm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 md:h-24">
+                
+                <!-- Dernek Logosu ve İsmi -->
+                <a href="#anasayfa" class="flex items-center gap-3 group">
+                    <img src="images/dernek-logo.jpg" alt="Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği logosu" class="w-14 h-14 md:w-16 md:h-16 rounded-full object-cover shadow-md shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <div class="flex flex-col">
+                        <span class="text-xs font-bold uppercase tracking-wider text-anadolu-terracotta">Sivas • Suşehri</span>
+                        <h1 class="font-serif font-bold text-base sm:text-lg md:text-xl text-anadolu-forest leading-tight">
+                            Şarköy Köyü
+                        </h1>
+                        <span class="text-[11px] sm:text-xs text-anadolu-muted font-medium">Yardımlaşma ve Dayanışma Derneği</span>
+                    </div>
+                </a>
+
+                <!-- Masaüstü Menü -->
+                <nav class="hidden lg:flex items-center space-x-7 font-medium text-sm text-anadolu-charcoal">
+                    <a href="#anasayfa" class="hover:text-anadolu-terracotta transition py-2">Ana Sayfa</a>
+                    <a href="#hakkimizda" class="hover:text-anadolu-terracotta transition py-2">Dernek Hakkında</a>
+                    <a href="#baskan" class="hover:text-anadolu-terracotta transition py-2">Dernek Başkanı</a>
+                    <a href="#galeri" class="hover:text-anadolu-terracotta transition py-2">Galeri</a>
+                    <a href="#duyurular" class="hover:text-anadolu-terracotta transition py-2">Haberler & Duyurular</a>
+                    <a href="#iletisim" class="hover:text-anadolu-terracotta transition py-2">İletişim & Konum</a>
+                </nav>
+
+                <!-- Sağ Aksiyon Butonları -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openMemberModal()" class="bg-anadolu-terracotta hover:bg-anadolu-terracottaDark text-white font-semibold px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Üye Ol</span>
+                    </button>
+
+                    <!-- Mobil Menü Butonu -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menüyü Aç" class="lg:hidden p-2.5 rounded-xl bg-anadolu-sand text-anadolu-forest hover:bg-anadolu-warm transition">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobil Açılır Menü -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-anadolu-sand border-t border-anadolu-warm px-4 pt-3 pb-6 space-y-2 shadow-inner">
+            <a href="#anasayfa" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">Ana Sayfa</a>
+            <a href="#hakkimizda" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">Dernek Hakkında</a>
+            <a href="#baskan" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">Dernek Başkanı</a>
+            <a href="#galeri" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">Şarköy Galeri</a>
+            <a href="#duyurular" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">Haberler & Duyurular</a>
+            <a href="#iletisim" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl font-medium hover:bg-anadolu-cream text-anadolu-forest">İletişim & Konum</a>
+            <div class="pt-3 border-t border-anadolu-warm flex justify-center gap-4">
+                <a href="https://www.instagram.com/sivassarkoy58?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-anadolu-terracotta text-white flex items-center justify-center"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/905320000058" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO (KARŞILAMA) BÖLÜMÜ -->
+    <section id="anasayfa" class="relative min-h-[82vh] flex items-center overflow-hidden">
+        <!-- Arka Plan Görseli (Sivas Suşehri Şarköy Köyü Gerçek Fotoğrafı) -->
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="images/sarkoy-koyu-1.jpg" 
+                onerror="this.src='https://placehold.co/1920x1080/2C4A3E/FDFBF7?text=Sivas+Susehri+Sarkoy+Koyu'"
+                alt="Sivas Suşehri Şarköy Köyü Genel Görünümü" 
+                class="w-full h-full object-cover object-center"
+            >
+            <!-- Sıcak Koyu Gradyan Katmanı -->
+            <div class="absolute inset-0 bg-gradient-to-r from-anadolu-forestDark/90 via-anadolu-forest/75 to-anadolu-charcoal/45"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-white">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-anadolu-wheat/20 backdrop-blur-md border border-anadolu-wheat/40 text-anadolu-wheatLight px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-6">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <span>Sivas • Suşehri • Şarköy Köyü</span>
+                </div>
+
+                <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Birlikte Güçlüyüz, <span class="text-anadolu-wheat italic">Geleneklerimizle</span> Geleceğe Yürüyoruz
+                </h2>
+
+                <p class="text-base sm:text-lg text-anadolu-sand/90 leading-relaxed mb-8 max-w-2xl">
+                    Toprağımızın bereketini, atalarımızdan miras kalan imece kültürünü ve hemşehri dayanışmasını gurbette ve sılada yaşatmak için tek yürek olduk. Şarköy Köyü ailesine siz de katılın.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <button onclick="openMemberModal()" class="bg-anadolu-terracotta hover:bg-anadolu-terracottaDark text-white font-bold px-7 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-0.5 flex items-center gap-3 text-base">
+                        <i class="fa-solid fa-handshake-angle text-lg"></i>
+                        <span>Derneğe Üye Ol</span>
+                    </button>
+
+                    <a href="#hakkimizda" class="bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold px-7 py-4 rounded-2xl transition flex items-center gap-2 text-base">
+                        <span>Köyümüzü & Derneğimizi Tanıyın</span>
+                        <i class="fa-solid fa-arrow-down text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Hızlı Bilgi Rozetleri -->
+                <div class="mt-12 pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-serif font-bold text-anadolu-wheat">58</p>
+                        <p class="text-xs sm:text-sm text-anadolu-sand/80">Sivas Suşehri Ruhu</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-serif font-bold text-anadolu-wheat">150+</p>
+                        <p class="text-xs sm:text-sm text-anadolu-sand/80">Kayıtlı Hemşehri Üye</p>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <p class="text-2xl sm:text-3xl font-serif font-bold text-anadolu-wheat">İmece & Birlik</p>
+                        <p class="text-xs sm:text-sm text-anadolu-sand/80">Sıladan Gurbete Dayanışma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DERNEK HAKKINDA & MİSYONUMUZ -->
+    <section id="hakkimizda" class="py-20 bg-anadolu-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-anadolu-terracotta font-bold uppercase tracking-widest text-xs">Köklerimiz & Değerlerimiz</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-anadolu-forest mt-2 mb-4">
+                    Derneğimiz Hakkında
+                </h2>
+                <div class="kilim-divider mb-5"></div>
+                <p class="text-anadolu-muted text-base sm:text-lg">
+                    Sivas'ın güzel ilçesi Suşehri'ne bağlı köyümüz Şarköy'ün örf, adet ve dayanışma kültürünü gelecek nesillere aktarmak amacıyla kurulduk.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Sol Görsel Kompozisyonu -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img 
+                            src="images/sarkoy-koyu-2.jpg" 
+                            onerror="this.src='https://placehold.co/800x600/2C4A3E/FDFBF7?text=Sarkoy+Koyu'"
+                            alt="Sivas Suşehri Şarköy Köyü Manzarası" 
+                            class="w-full h-[400px] sm:h-[460px] object-cover"
+                        >
+                    </div>
+                    <!-- Köşe Bilgi Kartı -->
+                    <div class="bg-anadolu-forest text-white p-6 rounded-2xl shadow-xl max-w-xs -mt-12 ml-4 sm:ml-8 relative z-10 border-l-4 border-anadolu-wheat">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fa-solid fa-seedling text-anadolu-wheat text-2xl"></i>
+                            <h4 class="font-serif font-bold text-lg">Şarköy'ün Bereketi</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-anadolu-sand/90 leading-relaxed">
+                            Suşehri'nin verimli topraklarından çıkan kardeşlik bağını gurbetteki her bir hemşehrimizin kapısına taşıyoruz.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sağ Metin ve Faaliyet Alanları -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-anadolu-charcoal">
+                        "İyi Günde Sevinci, Zor Günde Yükü Paylaşıyoruz"
+                    </h3>
+                    <p class="text-anadolu-muted leading-relaxed">
+                        <strong>Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği</strong>; gurbette yaşayan köylülerimiz ile köyümüzde ikamet eden büyüklerimiz arasında güçlü bir gönül köprüsü kurmaktadır. Düğünlerimizde sevinci paylaşıyor, taziyelerimizde omuz omuza duruyor ve hemşehrilerimiz arasındaki birlikteliği daima canlı tutuyoruz.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-anadolu-sand p-5 rounded-2xl border border-anadolu-warm hover:border-anadolu-terracotta transition">
+                            <div class="w-10 h-10 rounded-xl bg-anadolu-forest/15 text-anadolu-forest flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-hands-holding-circle text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-anadolu-forest mb-1">Sosyal Yardımlaşma</h4>
+                            <p class="text-xs text-anadolu-muted leading-relaxed">İhtiyaç sahibi ailelerimize erzak, sağlık ve acil durum destekleriyle her zaman yanlarındayız.</p>
+                        </div>
+
+                        <div class="bg-anadolu-sand p-5 rounded-2xl border border-anadolu-warm hover:border-anadolu-terracotta transition">
+                            <div class="w-10 h-10 rounded-xl bg-anadolu-wheat/25 text-anadolu-charcoal flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-tree text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-anadolu-forest mb-1">Köyümüz & Çevre Projeleri</h4>
+                            <p class="text-xs text-anadolu-muted leading-relaxed">Şarköy mezarlık bakımı, çeşme onarımları, ağaçlandırma ve köy konağı imece çalışmaları yapıyoruz.</p>
+                        </div>
+
+                        <div class="bg-anadolu-sand p-5 rounded-2xl border border-anadolu-warm hover:border-anadolu-terracotta transition">
+                            <div class="w-10 h-10 rounded-xl bg-anadolu-terracotta/15 text-anadolu-terracotta flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-people-group text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-anadolu-forest mb-1">Hemşehri Dayanışması</h4>
+                            <p class="text-xs text-anadolu-muted leading-relaxed">İstanbul Esenyurt'taki dernek merkezimizde köylülerimizle bir araya gelerek bağlarımızı güçlendiriyoruz.</p>
+                        </div>
+
+                        <div class="bg-anadolu-sand p-5 rounded-2xl border border-anadolu-warm hover:border-anadolu-terracotta transition">
+                            <div class="w-10 h-10 rounded-xl bg-anadolu-forest/15 text-anadolu-forest flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-heart text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-anadolu-forest mb-1">İyi Günde & Zor Günde</h4>
+                            <p class="text-xs text-anadolu-muted leading-relaxed">Düğün, nişan ve taziye günlerinde hemşehrilerimizin yanında olarak örf ve adetlerimizi yaşatıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. DERNEK BAŞKANI BÖLÜMÜ -->
+    <section id="baskan" class="py-20 bg-anadolu-sand border-y border-anadolu-warm relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-anadolu-terracotta font-bold uppercase tracking-widest text-xs">Dernek Başkanı'nın Mesajı</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-anadolu-forest mt-2 mb-4">
+                    Dernek Başkanımız
+                </h2>
+                <div class="kilim-divider"></div>
+            </div>
+
+            <div class="bg-anadolu-cream rounded-3xl shadow-xl border border-anadolu-warm overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    <!-- Başkan Bilgi Alanı -->
+                    <div class="lg:col-span-4 bg-anadolu-forest p-8 sm:p-10 flex flex-col items-center justify-center text-center text-white relative">
+                        <span class="bg-anadolu-wheat/20 text-anadolu-wheatLight text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-2">
+                            Dernek Başkanı
+                        </span>
+                        <h3 class="font-serif text-2xl font-bold text-white">İzzet Yürek</h3>
+                        <p class="text-anadolu-sand/80 text-sm mt-1">Sivas Suşehri Şarköy Derneği</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/15 w-full text-xs text-anadolu-sand/80 space-y-1">
+                            <p><i class="fa-solid fa-quote-left text-anadolu-wheat mr-1"></i> Birlikten kuvvet, dayanışmadan bereket doğar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Başkanın Mesajı -->
+                    <div class="lg:col-span-8 p-8 sm:p-12 flex flex-col justify-center">
+                        <div>
+                            <div class="flex items-center gap-2 text-anadolu-terracotta mb-4">
+                                <i class="fa-solid fa-quote-left text-3xl opacity-40"></i>
+                                <span class="font-serif italic text-lg font-semibold">Kıymetli Şarköylü Hemşehrilerim, Değerli Büyüklerim ve Sevgili Gençler;</span>
+                            </div>
+
+                            <div class="space-y-4 text-anadolu-charcoal/90 leading-relaxed text-sm sm:text-base">
+                                <p>
+                                    Sivas'ımızın güzel ilçesi Suşehri'nin yeşiliyle, suyuyla, misafirperverliğiyle gönlümüzde taht kuran köyümüz <strong>Şarköy</strong>'ün evlatları olarak sizleri en kalbi duygularımla selamlıyorum.
+                                </p>
+                                <p>
+                                    Hayat şartları bizleri memleketimizden uzak şehirlere getirse de gönlümüz her zaman köyümüzün yaylalarında, köy meydanımızdaki sohbetlerde atıyor. Derneğimizi kurarken tek bir gayemiz vardı: <em>"Hiçbir Şarköylü kendini gurbette yalnız hissetmesin, köyümüzün ocağı hep tütsün."</em>
+                                </p>
+                                <p>
+                                    Şeffaf, kapsayıcı ve üreten bir anlayışla çalışıyoruz. Gelin, derneğimize üye olarak bu güzel imeceye siz de omuz verin. Esenyurt'taki dernek merkezimizin kapısı da gönlümüz de tüm hemşehrilerimize sonuna kadar açıktır.
+                                </p>
+                            </div>
+
+                            <div class="mt-8 pt-6 border-t border-anadolu-warm flex flex-wrap items-center justify-between gap-4">
+                                <div>
+                                    <p class="font-serif font-bold text-lg text-anadolu-forest">İzzet Yürek</p>
+                                    <p class="text-xs text-anadolu-muted font-medium">Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği Başkanı</p>
+                                </div>
+                                <button onclick="openMemberModal()" class="bg-anadolu-forest hover:bg-anadolu-forestDark text-white text-xs font-bold px-5 py-3 rounded-xl transition flex items-center gap-2">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>Derneğimize Üye Olun</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SİVAS SUŞEHRİ ŞARKÖY FOTOĞRAF GALERİSİ -->
+    <section id="galeri" class="py-20 bg-anadolu-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-anadolu-terracotta font-bold uppercase tracking-widest text-xs">Memleketten Kareler</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-anadolu-forest mt-2 mb-4">
+                    Şarköy & Suşehri Fotoğraf Galerisi
+                </h2>
+                <div class="kilim-divider mb-5"></div>
+                <p class="text-anadolu-muted">
+                    Köyümüzün eşsiz doğasından, yaylalarımızdan ve geleneksel kültürümüzden hatıralar. (Büyütmek için fotoğraflara tıklayın)
+                </p>
+            </div>
+
+            <!-- Kategori Filtre Butonları -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="gallery-filters">
+                <button onclick="filterGallery('all', this)" class="filter-btn active bg-anadolu-forest text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition shadow-sm">
+                    Tümü
+                </button>
+                <button onclick="filterGallery('doga', this)" class="filter-btn bg-anadolu-sand text-anadolu-charcoal hover:bg-anadolu-warm px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+                    Köyümüz & Yaylalar
+                </button>
+                <button onclick="filterGallery('kultur', this)" class="filter-btn bg-anadolu-sand text-anadolu-charcoal hover:bg-anadolu-warm px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+                    Yöresel Kültür & Soframız
+                </button>
+            </div>
+
+            <!-- Galeri Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="doga" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/sarkoy-koyu-1.jpg" alt="Sivas Suşehri Şarköy Köyü genel görünüm" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Köyümüz & Yaylalar</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Şarköy Köyü Genel Görünüm</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">Ormanlarla çevrili vadide camimiz ve köy evlerimiz.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:%C5%9Eark%C3%B6y,_Su%C5%9Fehri_2017-07-02_01-1.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Zeynel Cebeci · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="doga" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/sarkoy-koyu-2.jpg" alt="Şarköy Köyü evleri ve camisi" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Köyümüz & Yaylalar</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Köyümüz ve Camimiz</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">Yeşillikler arasındaki evlerimiz, minaremiz ve köy yolları.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:%C5%9Eark%C3%B6y,_Su%C5%9Fehri_2017-07-02_01-2.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Zeynel Cebeci · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="doga" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/sarkoy-deresi-2.jpg" alt="Şarköy deresi ve kuşburnu çalıları" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Köyümüz & Yaylalar</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Şarköy Deresi</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">Çiçek açmış kuşburnu çalıları arasından akan köy deremiz.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:Stream_in_%C5%9Eark%C3%B6y_2017-07-02_01-2.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Zeynel Cebeci · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="doga" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/sarkoy-deresi-1.jpg" alt="Şarköy deresinin yaz görünümü" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Köyümüz & Yaylalar</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Derenin Kıyısında Yaz</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">Köyümüzün serin suları ve yemyeşil dere kenarı.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:Stream_in_%C5%9Eark%C3%B6y_2017-07-02_01-1.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Zeynel Cebeci · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="kultur" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/susehri-bugday-hasadi.jpg" alt="Suşehri'nde buğday hasadı" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Yöresel Kültür</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Suşehri'nde Hasat Zamanı</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">Bereketli topraklarımızda yaz sonu buğday hasadı.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:Wheat_harvest_in_Su%C5%9Fehri,_Sivas_Province.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Maurice Flesier · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md bg-anadolu-sand cursor-pointer border border-anadolu-warm" data-category="doga" onclick="openLightbox(this)">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/susehri-kizildag.jpg" alt="Suşehri'nden Kızıldağ görünümü" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <span class="text-[11px] font-bold uppercase text-anadolu-terracotta">Köyümüz & Yaylalar</span>
+                        <h3 class="font-serif font-bold text-anadolu-forest text-lg mt-0.5">Suşehri'nden Kızıldağ</h3>
+                        <p class="text-xs text-anadolu-muted mt-1">İlçemizin simgesi Kızıldağ ve çevresindeki yaylalar.</p>
+                        <a href="https://commons.wikimedia.org/wiki/File:Mt._K%C4%B1z%C4%B1lda%C4%9F_from_Su%C5%9Fehri_district.jpg" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="inline-block text-[10px] text-anadolu-muted/80 hover:text-anadolu-terracotta mt-2">Fotoğraf: Maurice Flesier · CC BY-SA 4.0 · Wikimedia Commons</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. HABERLER VE DUYURULAR -->
+    <section id="duyurular" class="py-20 bg-anadolu-forest text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-anadolu-wheat font-bold uppercase tracking-widest text-xs">Dernek Gündemi</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">
+                        Haberler ve Duyurular
+                    </h2>
+                </div>
+                <button onclick="openMemberModal()" class="self-start md:self-auto bg-anadolu-wheat text-anadolu-forestDark hover:bg-anadolu-wheatLight font-bold px-5 py-3 rounded-xl text-sm transition">
+                    Duyurulardan Haberdar Olmak İçin Üye Olun
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Haber / Duyuru 1 -->
+                <article class="bg-anadolu-forestDark/80 border border-white/15 rounded-2xl p-6 flex flex-col justify-between hover:border-anadolu-wheat transition">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-anadolu-wheat mb-3">
+                            <span class="bg-anadolu-terracotta text-white px-2.5 py-1 rounded-lg font-semibold">Duyuru</span>
+                            <span><i class="fa-regular fa-bell mr-1"></i> Üyelik Kayıtları</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-3">Dernek Üyelik Kayıtlarımız Devam Ediyor</h3>
+                        <p class="text-sm text-anadolu-sand/80 leading-relaxed">
+                            Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği olarak 150'yi aşkın üyemizle büyümeye devam ediyoruz. Henüz kayıt olmamış tüm hemşehrilerimizi ailemize bekliyoruz.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 text-xs text-anadolu-wheatLight font-medium">
+                        Dernek Merkezi • Esenyurt / İstanbul
+                    </div>
+                </article>
+
+                <!-- Haber / Duyuru 2 -->
+                <article class="bg-anadolu-forestDark/80 border border-white/15 rounded-2xl p-6 flex flex-col justify-between hover:border-anadolu-wheat transition">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-anadolu-wheat mb-3">
+                            <span class="bg-anadolu-wheat text-anadolu-forestDark px-2.5 py-1 rounded-lg font-semibold">Dernek Merkezi</span>
+                            <span><i class="fa-regular fa-building mr-1"></i> Ziyaret & Sohbet</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-3">Esenyurt Dernek Merkezimiz Hemşehrilerimize Açık</h3>
+                        <p class="text-sm text-anadolu-sand/80 leading-relaxed">
+                            Sultaniye Mahallesi Aziz Nesin Caddesi No: 28 adresindeki dernek merkezimizde çay eşliğinde hemşehri buluşmalarımız ve istişare toplantılarımız sürmektedir.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 text-xs text-anadolu-wheatLight font-medium">
+                        Adres: Sultaniye Mah. Aziz Nesin Cad. No: 28
+                    </div>
+                </article>
+
+                <!-- Haber / Duyuru 3 -->
+                <article class="bg-anadolu-forestDark/80 border border-white/15 rounded-2xl p-6 flex flex-col justify-between hover:border-anadolu-wheat transition">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-anadolu-wheat mb-3">
+                            <span class="bg-emerald-700 text-white px-2.5 py-1 rounded-lg font-semibold">İmece & Köyümüz</span>
+                            <span><i class="fa-solid fa-seedling mr-1"></i> Şarköy</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-3">Köyümüzle Dayanışma ve İmece Çalışmaları</h3>
+                        <p class="text-sm text-anadolu-sand/80 leading-relaxed">
+                            Köyümüzün ortak kullanım alanlarının bakımı, taziye ve düğün dayanışması konularında tüm hemşehrilerimizin görüş ve katkılarıyla çalışmalarımızı sürdürüyoruz.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 text-xs text-anadolu-wheatLight font-medium">
+                        Sivas • Suşehri • Şarköy Köyü
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. İLETİŞİM, KONUM ADRESİ VE SOSYAL MEDYA BÖLÜMÜ -->
+    <section id="iletisim" class="py-20 bg-anadolu-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-anadolu-terracotta font-bold uppercase tracking-widest text-xs">Bize Ulaşın</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-anadolu-forest mt-2 mb-4">
+                    İletişim & Konum Bilgilerimiz
+                </h2>
+                <div class="kilim-divider mb-4"></div>
+                <p class="text-anadolu-muted">
+                    Dernek merkezimize ziyarete bekleriz. Öneri, talep ve üyelik işlemleriniz için bize dilediğiniz zaman ulaşabilirsiniz.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8">
+                <!-- Sol Kolon: Adres Kartları, Sosyal Medya ve Harita -->
+                <div class="lg:col-span-6 space-y-6">
+                    <!-- Adres ve Telefon Bilgileri -->
+                    <div class="bg-anadolu-cream p-6 sm:p-8 rounded-3xl shadow-md border border-anadolu-warm space-y-5">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-anadolu-terracotta/15 text-anadolu-terracotta flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-building-user text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-lg text-anadolu-forest">Dernek Merkezi Adresimiz</h3>
+                                <p class="text-sm text-anadolu-muted mt-1 leading-relaxed">
+                                    Sultaniye Mahallesi, Aziz Nesin Caddesi No: 28<br>
+                                    Esenyurt / İstanbul
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-anadolu-forest/15 text-anadolu-forest flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-map-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-lg text-anadolu-forest">Memleket Adresimiz</h3>
+                                <p class="text-sm text-anadolu-muted mt-1 leading-relaxed">
+                                    Şarköy Köyü, 58600<br>
+                                    Suşehri / Sivas
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Sosyal Medya Butonları -->
+                        <div class="pt-4 border-t border-anadolu-warm">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-anadolu-muted mb-3">Resmi Sosyal Medya Hesaplarımız</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <a href="https://www.instagram.com/sivassarkoy58?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white text-xs font-bold hover:opacity-90 transition shadow-sm">
+                                    <i class="fa-brands fa-instagram text-base"></i> Instagram (@sivassarkoy58)
+                                </a>
+                                <a href="https://wa.me/905320000058" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] text-white text-xs font-bold hover:opacity-90 transition shadow-sm">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp İletişim
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Haritalar Konumu (İstanbul Esenyurt Sultaniye Mah. Aziz Nesin Cad. No: 28) -->
+                    <div class="bg-anadolu-cream p-3 rounded-3xl shadow-md border border-anadolu-warm">
+                        <div class="rounded-2xl overflow-hidden h-64 relative">
+                            <iframe 
+                                title="Dernek Merkezi Harita Konumu - Esenyurt İstanbul"
+                                src="https://www.google.com/maps?q=Sultaniye+Mahallesi+Aziz+Nesin+Caddesi+No+28+Esenyurt+Istanbul&output=embed" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="flex justify-between items-center px-3 pt-3 pb-1">
+                            <span class="text-xs font-medium text-anadolu-muted">
+                                <i class="fa-solid fa-location-crosshairs text-anadolu-terracotta mr-1"></i> Sultaniye Mah. Aziz Nesin Cad. No: 28, Esenyurt
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sultaniye+Mahallesi+Aziz+Nesin+Caddesi+No+28+Esenyurt+Istanbul" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-anadolu-forest hover:text-anadolu-terracotta transition flex items-center gap-1 shrink-0">
+                                <span>Yol Tarifi Al</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Kolon: Hızlı İletişim Mesaj Formu -->
+                <div class="lg:col-span-6">
+                    <div class="bg-anadolu-cream p-8 sm:p-10 rounded-3xl shadow-md border border-anadolu-warm h-full flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-anadolu-forest mb-2">Bize Mesaj Gönderin</h3>
+                            <p class="text-sm text-anadolu-muted mb-6">
+                                Köyümüzle ilgili görüşlerinizi, taziye/düğün duyurularınızı veya sorularınızı derneğimize iletebilirsiniz.
+                            </p>
+
+                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                                <input type="hidden" name="access_key" value="72531bea-971f-4591-a103-669fd767321a">
+                                <input type="hidden" name="subject" value="Şarköy Derneği - Yeni İletişim Mesajı">
+                                <input type="hidden" name="from_name" value="Şarköy Köyü Derneği Web Sitesi">
+
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-anadolu-charcoal mb-1.5">Adınız Soyadınız *</label>
+                                        <input type="text" name="Ad_Soyad" required placeholder="Örn: Ali Yılmaz" class="w-full px-4 py-3 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-anadolu-charcoal mb-1.5">Telefon Numaranız *</label>
+                                        <input type="tel" name="Telefon" required placeholder="05XX XXX XX XX" class="w-full px-4 py-3 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-anadolu-charcoal mb-1.5">Konu</label>
+                                    <select name="Konu" class="w-full px-4 py-3 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                                        <option value="Genel Bilgi & Öneri">Genel Bilgi & Öneri</option>
+                                        <option value="Düğün / Taziye Duyurusu Paylaşımı">Düğün / Taziye Duyurusu Paylaşımı</option>
+                                        <option value="Üyelik İşlemleri Hakkında">Üyelik İşlemleri Hakkında</option>
+                                        <option value="Köy Projelerine Destek">Köy Projelerine Destek</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-anadolu-charcoal mb-1.5">Mesajınız *</label>
+                                    <textarea name="Mesaj" rows="5" required placeholder="Mesajınızı buraya yazabilirsiniz..." class="w-full px-4 py-3 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm"></textarea>
+                                </div>
+
+                                <button type="submit" id="contact-submit-btn" class="w-full bg-anadolu-forest hover:bg-anadolu-forestDark text-white font-bold py-4 rounded-xl shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Mesajı Gönder</span>
+                                </button>
+                            </form>
+
+                            <!-- İletişim Başarı Mesajı Kutusu -->
+                            <div id="contact-success" class="hidden mt-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-sm flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+                                <div>
+                                    <p class="font-bold">Mesajınız Başarıyla İletildi!</p>
+                                    <p class="text-xs mt-1">Teşekkür ederiz. Derneğimiz en kısa sürede sizinle iletişime geçecektir.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-5 border-t border-anadolu-warm flex items-center justify-between text-xs text-anadolu-muted">
+                            <span><i class="fa-solid fa-shield-halved text-anadolu-forest mr-1"></i> Kişisel verileriniz dernek tüzüğü kapsamında korunur.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ALT BİLGİ (FOOTER) -->
+    <footer class="bg-anadolu-forestDark text-anadolu-sand">
+        <div class="kilim-border"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid md:grid-cols-12 gap-10 pb-10 border-b border-white/10">
+                <!-- Kurumsal Özet -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="images/dernek-logo.jpg" alt="Dernek logosu" class="w-14 h-14 rounded-full object-cover shrink-0" loading="lazy">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-white">Sivas Suşehri Şarköy Köyü</h4>
+                            <p class="text-xs text-anadolu-wheat">Yardımlaşma ve Dayanışma Derneği</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-anadolu-sand/75 leading-relaxed">
+                        Sultaniye Mah. Aziz Nesin Cad. No: 28, Esenyurt / İstanbul adresindeki merkezimizde kültürümüzü yaşatmak ve hemşehrilerimiz arasındaki dayanışmayı güçlendirmek için çalışıyoruz.
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="https://www.instagram.com/sivassarkoy58?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-anadolu-terracotta flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/905320000058" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-anadolu-terracotta flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hızlı Linkler -->
+                <div class="md:col-span-3 space-y-3">
+                    <h5 class="font-serif font-bold text-white text-base">Hızlı Erişim</h5>
+                    <ul class="space-y-2 text-sm text-anadolu-sand/80">
+                        <li><a href="#anasayfa" class="hover:text-anadolu-wheat transition">Ana Sayfa</a></li>
+                        <li><a href="#hakkimizda" class="hover:text-anadolu-wheat transition">Dernek Hakkında</a></li>
+                        <li><a href="#baskan" class="hover:text-anadolu-wheat transition">Dernek Başkanı</a></li>
+                        <li><a href="#galeri" class="hover:text-anadolu-wheat transition">Şarköy Fotoğraf Galerisi</a></li>
+                        <li><a href="#duyurular" class="hover:text-anadolu-wheat transition">Haberler ve Duyurular</a></li>
+                        <li><a href="#iletisim" class="hover:text-anadolu-wheat transition">İletişim & Konum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Üyelik Çağrısı -->
+                <div class="md:col-span-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <h5 class="font-serif font-bold text-white text-lg mb-2">Ailemize Katılın</h5>
+                    <p class="text-xs text-anadolu-sand/80 leading-relaxed mb-4">
+                        Şarköy Köyü hemşehri ağımıza kayıt olarak duyurulardan haberdar olabilir, dernek üyeliğinizi kolayca başlatabilirsiniz.
+                    </p>
+                    <button onclick="openMemberModal()" class="w-full bg-anadolu-terracotta hover:bg-anadolu-terracottaDark text-white font-bold py-3 rounded-xl text-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Online Üyelik Formu</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-anadolu-sand/60 gap-3">
+                <p>© 2026 Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği. Tüm hakları saklıdır.</p>
+                <p>Esenyurt / İstanbul • Sivas / Suşehri</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- İNTERAKTİF ÜYE OL MODALI (BAŞVURU PENCERESİ)                          -->
+    <!-- ===================================================================== -->
+    <div id="member-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+        <div class="bg-anadolu-cream w-full max-w-lg rounded-3xl shadow-2xl border border-anadolu-warm overflow-hidden relative animate-[fadeIn_0.2s_ease-out]">
+            <div class="kilim-border"></div>
+            
+            <!-- Modal Üst Başlık -->
+            <div class="bg-anadolu-forest text-white px-6 py-5 flex justify-between items-center">
+                <div>
+                    <span class="text-[11px] uppercase tracking-wider text-anadolu-wheat font-bold">Şarköy Dayanışma Ailesi</span>
+                    <h3 class="font-serif text-xl font-bold">Dernek Üyelik Başvuru Formu</h3>
+                </div>
+                <button onclick="closeMemberModal()" aria-label="Kapat" class="w-9 h-9 rounded-full bg-white/15 hover:bg-anadolu-terracotta flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Form İçeriği -->
+            <div class="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
+                <form id="membership-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleMembershipSubmit(event)" class="space-y-4">
+                    <input type="hidden" name="access_key" value="72531bea-971f-4591-a103-669fd767321a">
+                    <input type="hidden" name="subject" value="Şarköy Derneği - Yeni Üyelik Başvurusu">
+                    <input type="hidden" name="from_name" value="Şarköy Köyü Derneği Web Sitesi">
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">Adınız Soyadınız *</label>
+                            <input type="text" name="Ad_Soyad" required placeholder="Ad Soyad" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">Baba Adı / Sülale *</label>
+                            <input type="text" name="Baba_Adi_Sulale" required placeholder="Örn: Hasan Oğlu" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">Cep Telefonu *</label>
+                            <input type="tel" name="Cep_Telefonu" required placeholder="05XX XXX XX XX" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">Doğum Yılı</label>
+                            <input type="number" name="Dogum_Yili" min="1930" max="2010" placeholder="Örn: 1985" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">İkamet İli / İlçesi *</label>
+                            <input type="text" name="Ikamet_Il_Ilce" required placeholder="Örn: İstanbul / Esenyurt" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-anadolu-charcoal mb-1">Mesleğiniz</label>
+                            <input type="text" name="Meslek" placeholder="Örn: Esnaf, Öğretmen, Öğrenci" class="w-full px-3.5 py-2.5 rounded-xl bg-anadolu-sand border border-anadolu-warm focus:outline-none focus:border-anadolu-forest text-sm">
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-2.5 pt-1">
+                        <input type="checkbox" id="kvkk-check" name="KVKK_Onayi" value="Onaylandı" required class="mt-1 accent-anadolu-terracotta w-4 h-4 rounded">
+                        <label for="kvkk-check" class="text-xs text-anadolu-muted leading-relaxed">
+                            Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği tüzüğünü kabul ediyor, üyelik ve duyuru bilgilendirmeleri için iletişim bilgilerimin kaydedilmesine onay veriyorum.
+                        </label>
+                    </div>
+
+                    <button type="submit" id="membership-submit-btn" class="w-full bg-anadolu-terracotta hover:bg-anadolu-terracottaDark text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Üyelik Başvurusunu Tamamla</span>
+                    </button>
+                </form>
+
+                <!-- Üyelik Başvuru Onay Ekranı -->
+                <div id="membership-success" class="hidden text-center py-6 space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto text-3xl">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl font-bold text-anadolu-forest">Aramıza Hoş Geldiniz!</h4>
+                    <p class="text-sm text-anadolu-muted leading-relaxed">
+                        Üyelik ön başvurunuz Dernek Başkanlığımıza ulaşmıştır. En kısa sürede telefon numaranız üzerinden sizinle iletişime geçilerek kaydınız tamamlanacaktır.
+                    </p>
+                    <button onclick="closeMemberModal()" class="bg-anadolu-forest text-white font-semibold px-6 py-2.5 rounded-xl text-sm">
+                        Kapat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- GALERİ TAM EKRAN BÜYÜTME (LIGHTBOX)                                   -->
+    <!-- ===================================================================== -->
+    <div id="lightbox-modal" onclick="closeLightbox()" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
+        <button onclick="closeLightbox()" aria-label="Kapat" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/15 text-white hover:bg-anadolu-terracotta flex items-center justify-center text-xl transition">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="" class="max-h-[75vh] mx-auto rounded-2xl shadow-2xl border-2 border-white/20">
+            <h4 id="lightbox-title" class="font-serif text-xl font-bold text-white mt-4"></h4>
+            <p id="lightbox-desc" class="text-sm text-anadolu-sand/80 mt-1"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT ETKİLEŞİMLERİ -->
+    <script>
+        // Mobil Menü Aç/Kapat
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Üyelik Modalı Aç/Kapat
+        function openMemberModal() {
+            const modal = document.getElementById('member-modal');
+            const form = document.getElementById('membership-form');
+            const success = document.getElementById('membership-success');
+            
+            form.classList.remove('hidden');
+            success.classList.add('hidden');
+            form.reset();
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMemberModal() {
+            const modal = document.getElementById('member-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Üyelik Formu Gönderimi (Web3Forms Arka Plan Gönderimi)
+        async function handleMembershipSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('membership-form');
+            const submitBtn = document.getElementById('membership-submit-btn');
+            const originalBtnHtml = submitBtn.innerHTML;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Gönderiliyor...</span>';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    form.classList.add('hidden');
+                    document.getElementById('membership-success').classList.remove('hidden');
+                    form.reset();
+                } else {
+                    alert('Başvuru gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+                }
+            } catch (error) {
+                alert('Bağlantı hatası oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHtml;
+            }
+        }
+
+        // İletişim Formu Gönderimi (Web3Forms Arka Plan Gönderimi)
+        async function handleContactSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('contact-submit-btn');
+            const successBox = document.getElementById('contact-success');
+            const originalBtnHtml = submitBtn.innerHTML;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Gönderiliyor...</span>';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    form.reset();
+                    successBox.classList.remove('hidden');
+                    setTimeout(() => {
+                        successBox.classList.add('hidden');
+                    }, 7000);
+                } else {
+                    alert('Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+                }
+            } catch (error) {
+                alert('Bağlantı hatası oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHtml;
+            }
+        }
+
+        // Galeri Kategori Filtreleme
+        function filterGallery(category, clickedBtn) {
+            // Buton aktiflik stilini güncelle
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-anadolu-forest', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-anadolu-sand', 'text-anadolu-charcoal');
+            });
+            clickedBtn.classList.remove('bg-anadolu-sand', 'text-anadolu-charcoal');
+            clickedBtn.classList.add('bg-anadolu-forest', 'text-white', 'shadow-sm');
+
+            // Kartları filtrele
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Galeri Lightbox (Fotoğraf Büyütme)
+        function openLightbox(cardElement) {
+            const img = cardElement.querySelector('img');
+            const title = cardElement.querySelector('h3').innerText;
+            const desc = cardElement.querySelector('p').innerText;
+
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-img').alt = img.alt;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-desc').innerText = desc;
+
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // ESC tuşu ile açık pencereleri kapatma
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeMemberModal();
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
