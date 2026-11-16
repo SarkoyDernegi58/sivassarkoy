@@ -1005,5 +1005,54 @@
             }
         });
     </script>
+    <!-- AÇILIŞ DUYURU PENCERESİ (POPUP) -->
+    <div id="welcome-popup" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+        <div class="bg-anadolu-cream w-full max-w-md rounded-3xl shadow-2xl border-2 border-anadolu-wheat overflow-hidden relative">
+            <div class="kilim-border"></div>
+            
+            <!-- Kapatma Çarpı Butonu -->
+            <button onclick="closeWelcomePopup()" aria-label="Duyuruyu Kapat" class="absolute top-6 right-4 w-8 h-8 rounded-full bg-anadolu-sand hover:bg-anadolu-terracotta hover:text-white text-anadolu-charcoal flex items-center justify-center transition shadow-sm">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="p-7 sm:p-8 text-center">
+                <div class="w-16 h-16 rounded-2xl bg-anadolu-forest/10 text-anadolu-forest flex items-center justify-center mx-auto mb-4 border border-anadolu-forest/20">
+                    <i class="fa-solid fa-bullhorn text-2xl text-anadolu-terracotta"></i>
+                </div>
+
+                <span class="inline-block bg-anadolu-wheat/25 text-anadolu-forestDark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+                    Önemli Duyuru
+                </span>
+
+                <h3 class="font-serif text-2xl font-bold text-anadolu-forest leading-snug mb-3">
+                    Dernek Üyelik Kayıtlarımız Devam Ediyor
+                </h3>
+
+                <div class="kilim-divider mb-4"></div>
+
+                <p class="text-sm text-anadolu-muted leading-relaxed mb-6">
+                    Sivas Suşehri Şarköy Köyü Yardımlaşma ve Dayanışma Derneği olarak birlik ve dayanışma ağımızı büyütüyoruz. Henüz kayıt olmamış tüm hemşehrilerimizi ailemize bekliyoruz.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <button onclick="closeWelcomePopup(); openMemberModal();" class="flex-1 bg-anadolu-terracotta hover:bg-anadolu-terracottaDark text-white font-bold py-3 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Hemen Üye Ol</span>
+                    </button>
+                    <button onclick="closeWelcomePopup()" class="sm:w-auto bg-anadolu-sand hover:bg-anadolu-warm text-anadolu-charcoal font-semibold py-3 px-5 rounded-xl transition text-sm">
+                        Siteye Geç
+                    </button>
+                </div>
+            </div>
+            <div class="kilim-border"></div>
+        </div>
+    </div>
+
+    <script>
+        function closeWelcomePopup() {
+            const popup = document.getElementById('welcome-popup');
+            if (popup) popup.classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
