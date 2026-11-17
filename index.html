@@ -246,6 +246,45 @@
                             class="w-full h-[400px] sm:h-[460px] object-cover"
                         >
                     </div>
+                    <!-- VİDEO VE AÇIKLAMA KUTUCUĞU (Mevcut grid yapısının hemen altına ekleyin) -->
+            <div class="mt-16 bg-white rounded-3xl shadow-xl border-4 border-white p-6 sm:p-10">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Sol Taraf: Açıklama -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full bg-red-100 text-red-700">
+                            Tanıtım Filmimiz
+                        </span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-800">
+                            Şarköy'ü Yakından Tanıyın
+                        </h3>
+                        <p class="text-anadolu-muted text-base leading-relaxed">
+                            Suşehri'nin incisi Şarköy'ün doğasını, kültürünü ve derneğimizin yürüttüğü dayanışma faaliyetlerini hazırladığımız tanıtım videomuzda izleyebilirsiniz.
+                        </p>
+                        <div class="pt-2">
+                            <a href="https://www.youtube.com/watch?v=JroNoajpuUU" target="_blank" rel="noopener noreferrer" 
+                               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-medium transition shadow-md">
+                                YouTube'da İzle
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Taraf: Responsive YouTube Videosu -->
+                    <div class="lg:col-span-7">
+                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border-2 border-gray-100">
+                            <iframe 
+                                class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/JroNoajpuUU" 
+                                title="Şarköy Derneği Tanıtım Videosu" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
                     <!-- Köşe Bilgi Kartı -->
                     <div class="bg-anadolu-forest text-white p-6 rounded-2xl shadow-xl max-w-xs -mt-12 ml-4 sm:ml-8 relative z-10 border-l-4 border-anadolu-wheat">
                         <div class="flex items-center gap-3 mb-2">
